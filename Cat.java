@@ -7,6 +7,8 @@ public class Cat extends Actor
     int W_PRAWO_2=2;
     int W_LEWO_1=3;
     int W_LEWO_2=4;
+    int KOT_JE_1=5;
+    int KOT_JE_2=6;
 
     int stanKota=SIEDZACY;
     public void klawisze()
@@ -34,9 +36,8 @@ public class Cat extends Actor
     {
         if(isTouching(Pizza.class))
             removeTouching(Pizza.class);
-
+      
     }
-
     public void wyglad()
     {
         if(stanKota==W_PRAWO_1)    setImage   ("cat-walk-right.png");
