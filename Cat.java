@@ -12,6 +12,7 @@ public class Cat extends Actor
 
     int punkty=0;
     boolean tanczyc=false;
+    boolean sen=false;
     public void klawisze()
     {
         if(!Greenfoot.isKeyDown ("left") && !Greenfoot.isKeyDown ("right"))
@@ -36,7 +37,14 @@ public class Cat extends Actor
         {
             removeTouching(Pizza.class);
             punkty++;
+            if(punkty%11==0)sen=true;
             if(punkty%5==0)tanczyc=true;
+            setImage("cat-eat.png");
+            Greenfoot.delay(10);
+            setImage("cat-eat2.png");
+            Greenfoot.delay(10);
+            setImage("cat-sit.png");
+            Greenfoot.delay(10);
         }
     }
 
@@ -58,7 +66,25 @@ public class Cat extends Actor
             Greenfoot.delay(100);
         }
     }
-
+    
+    public void sen()
+    {
+        if(sen)
+        {
+            sen=false;
+            setImage("cat-sleep-1.png");
+            Greenfoot.delay(100);
+            setImage("cat-sleep-2.png");
+            Greenfoot.delay(100);
+            setImage("cat-sleep-3.png");
+            Greenfoot.delay(100);
+            setImage("cat-sleep-4.png");
+            Greenfoot.delay(100);
+            setImage("cat-sit.png");
+            Greenfoot.delay(100);
+        }
+    }
+   
     public void wyglad()
     {
         if(stanKota==W_PRAWO_1)    setImage   ("cat-walk-right.png");
@@ -75,5 +101,6 @@ public class Cat extends Actor
         jedzenie();
         pokazPunkty();
         taniec();
+        sen();
     }    
 }
