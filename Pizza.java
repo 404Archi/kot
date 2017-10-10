@@ -17,5 +17,10 @@ public class Pizza extends Actor
         turn(90);
         move(1);
         turn(-90);
+        
+        int y = getY();
+        int wysokoscSwiata=getWorld().getHeight();
+        if(y>=wysokoscSwiata-1)getWorld().removeObject(this);
+        
     }    
 }
