@@ -6,6 +6,7 @@ simulation.speed=50
 dependency1.from=Cat
 target2.showInterface=false
 dependency3.from=MyWorld
+<<<<<<< HEAD
 target3.y=0
 target3.x=0
 target1.type=ClassTarget
@@ -14,6 +15,19 @@ class.Cat.image=cat-sit.png
 target3.type=ClassTarget
 target2.y=0
 target2.x=0
+=======
+dependency3.to=Pizza
+dependency3.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=275
+editor.fx.0.y=-4
+mainWindow.height=744
+mainWindow.width=1378
+mainWindow.x=-8
+mainWindow.y=-8
+package.numDependencies=3
+>>>>>>> 4a5b6e490605d95ffbd8295eecc42548cf3b6d01
 package.numTargets=3
 dependency3.to=Pizza
 class.Cat.superclass=greenfoot.Actor

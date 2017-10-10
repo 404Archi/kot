@@ -9,7 +9,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1400, 800, 1); 
+        super(1000, 600, 1); 
         prepare();
     }
 
@@ -21,6 +21,8 @@ public class MyWorld extends World
     {
         Cat cat = new Cat();
         addObject(cat,658,716);
+        cat.setLocation(483,519);
+        cat.setLocation(482,542);
     }
 
     public void act()
