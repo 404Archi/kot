@@ -19,14 +19,14 @@ public class Pizza extends Actor
         turn(90);
         move(1);
         turn(-90);
-<<<<<<< HEAD
+
         
         int y = getY();
         int wysokoscSwiata=getWorld().getHeight();
         if(y>=wysokoscSwiata-1)getWorld().removeObject(this);
         
-=======
+
        // if(isAtEdge) isRemove(Pizza.class) ;
->>>>>>> 4a5b6e490605d95ffbd8295eecc42548cf3b6d01
+
     }    
 }
